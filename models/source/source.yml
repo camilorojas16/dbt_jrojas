@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: RAW_CAR_SALES
+    database: DBT_COURSE
+    schema: DBT_JROJAS
+    tables:
+      - name: CAR_SALES
+        description: "sales data table from the transactional DB"
+        columns:
+          - name: DATE
+            description: "Sale Date car"
+          - name: SALESPERSON
+            description: "salesperson name of the car"
+          - name: CUSTOMERNAME
+            description: "Customer name"
+          - name: CARMAKE
+            description: "Make name of the car"
+          - name: CARMODEL
+            description: "Model name of the car"
+          - name: CARYEAR
+            description: "Year model car"
+          - name: SALEPRICE
+            description: "Price car without discount"
+          - name: COMMISSIONRATE
+            description: "% salesperson commission"
+          - name: COMMISSIONEARNED
+            description: "Salesperson commission ammount"
